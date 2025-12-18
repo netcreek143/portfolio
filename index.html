@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suriya - Fullstack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Suriya, Fullstack Developer from Chennai, India"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">Suriya</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-sun"></i>
+          </button>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="greeting">Hi, I'm</span>
+            <span class="name">Suriya</span>
+          </h1>
+          <div class="typing-container">
+            <span class="typing-text" id="typing-text"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+          <p class="hero-description">
+            Fullstack developer crafting scalable web applications and
+            e-commerce solutions from Chennai, India.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get In Touch</span>
+            </a>
+            <a
+              href="https://github.com/netcreek143"
+              class="btn btn-secondary"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+              <span>View Projects</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Fullstack Developer & Entrepreneur</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Passionate fullstack developer specializing in modern web
+              technologies. Building scalable e-commerce platforms and business
+              applications. Currently running Pack My Cake - an e-commerce
+              platform for cake packaging solutions.
+            </p>
+            <p>
+              B.Tech IT graduate (2021-2025) with hands-on experience in React,
+              Node.js, MongoDB, and cloud deployment. Love solving complex
+              problems and creating digital products that drive business growth.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="0">0</div>
+              <div class="stat-label">Year Exp</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="5">0</div>
+              <div class="stat-label">Skills</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications I've built</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Pack My Cake"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a
+                  href="https://github.com/netcreek143/pack-my-cake-guvi-project"
+                  target="_blank"
+                  >Pack My Cake</a
+                >
+              </h3>
+              <p>
+                E-commerce platform for cake boxes built with React, Node.js &
+                MongoDB. Live business application serving home bakers across
+                India.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/netcreek143/pack-my-cake-guvi-project"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Task Manager"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a
+                  href="https://github.com/netcreek143/taskmanager_project"
+                  target="_blank"
+                  >Task Manager</a
+                >
+              </h3>
+              <p>
+                Modern task management app with drag-and-drop functionality and
+                responsive design.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/netcreek143/taskmanager_project"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="HouseMate"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a
+                  href="https://github.com/netcreek143/housemate"
+                  target="_blank"
+                  >HouseMate</a
+                >
+              </h3>
+              <p>
+                House expenses dashboard with real-time analytics and
+                collaborative features.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/netcreek143/housemate"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Technologies I work with daily</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <span>MongoDB</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-docker"></i>
+            <span>Docker</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>sekarsuriya16@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 70100 15840</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
