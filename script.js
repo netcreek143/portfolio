@@ -58,6 +58,18 @@ if (currentTheme === 'dark' || (!currentTheme && prefersDark)) {
     themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
 }
 
+function updateNavbarBackground() {
+    const navbar = document.querySelector('.navbar');
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (window.scrollY > 100) {
+        navbar.style.background = isDark ? 'rgba(15, 23, 42, 0.98)' : 'rgba(255,255,255,0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+    } else {
+        navbar.style.background = isDark ? 'rgba(15, 23, 42, 0.95)' : 'rgba(255,255,255,0.95)';
+        navbar.style.boxShadow = 'none';
+    }
+}
+
 themeToggle.addEventListener('click', () => {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
@@ -65,6 +77,7 @@ themeToggle.addEventListener('click', () => {
     themeToggle.innerHTML = isDark ? 
         '<i class="fas fa-sun"></i>' : 
         '<i class="fas fa-moon"></i>';
+    updateNavbarBackground();
 });
 
 // Intersection Observer for animations
@@ -89,14 +102,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255,255,255,0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
-    } else {
-        navbar.style.background = 'rgba(255,255,255,0.95)';
-        navbar.style.boxShadow = 'none';
-    }
+    updateNavbarBackground();
 });
 
 // Smooth scrolling
@@ -116,6 +122,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     typeWriter();
+    updateNavbarBackground();
     
     // Observe elements for animation
     document.querySelectorAll('.stat-number, .skill-item').forEach(el => {
